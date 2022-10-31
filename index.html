@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <h1 style ="text-align: center;">Door Lock Security System</h1>
+        <title>DOOR LOCK SECURITY SYSTEM</title>
+        <style>
+            body{
+                background: #0000;
+                color:rgb(226, 247, 71);
+                background-image:url(cctv.jpg);
+                
+            }
+        </style>
+        <script type="text/javascript" src="https://flashphoner.com/downloads/builds/flashphoner_client/wcs_api-2.0/current/flashphoner.js"></script>
+        <script type="text/javascript" src="two-way-streaming-min.js"></script>
+        <style> 
+        ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(21, 28, 27);
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(246, 81, 81);
+}
+
+.active {
+  background-color: #17af78;
+}
+        </style>
+    </head>
+    <style>
+        h1 {
+            font-style: italic;
+            font-size: 50px;
+  -webkit-text-stroke: 2px black;
+}
+        .fp-Video {
+            border: 2px double black;
+            width: 800px;
+            height: 500px;
+            text-align: center;
+            margin-left: 350px;
+            background-color: white;
+        }
+        .display > video,
+        object {
+            width: 100%;
+            height: 100%;
+        }
+        button
+        {
+            font: size 80px;
+            padding: 15px;
+            border-radius: 5px;
+            margin-left: 1050px;
+            cursor: pointer;
+            transition: 0.2s all;
+            position: relative;
+            overflow: hidden;
+            background-color:white;
+            box-shadow: 6px 7px 40px -4px 
+                     rgba(255, 255, 255, 0.2);
+            
+        }
+        .button:hover 
+        {   background-color: #3e8e41
+        }
+
+        .button:active 
+        {
+            background-color: #3e8e41;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+    </style>
+    <body onload="init_api()">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        
+        </div>
+        <br />
+        
+        <br />
+        <div class="fp-Video">
+            <div id="play" class="display"></div>
+        </div>
+        <br />
+        <br />
+        <button id="playBtn" >Lock switch</button><br />
+        <br />
+    </body>
+</html>
